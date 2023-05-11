@@ -1,0 +1,173 @@
+<html>
+<head>
+	<title>Intranet</title>
+	<style>
+		.rainbow-text {
+			font-size: 2em;
+			font-weight: bold;
+			animation: rainbow 5s infinite;
+			background-color: black;
+			color: white;
+			text-align: center;
+			padding: 50px;
+			margin: 0;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		@keyframes rainbow {
+			0% { color: red; }
+			16.67% { color: orange; }
+			33.33% { color: yellow; }
+			50% { color: green; }
+			66.67% { color: blue; }
+			83.33% { color: indigo; }
+			100% { color: violet; }
+		}
+	</style>
+
+<body background="intraned.jpg">
+
+</head>
+    
+<style>
+	    img {
+	        position: absolute;
+	        top: 0;
+	        left: 0;
+	        animation: mover 5s infinite alternate;
+	        animation-direction: alternate-reverse;
+	    }
+
+	    @keyframes mover {
+	        from {transform: translateX(0);}
+	        to {transform: translateX(100%);}
+	    }
+	</style>
+	<style>
+		.container {
+			position: relative;
+			width: 100%;
+			height: 100vh;
+			overflow: hidden;
+		}
+		.image {
+		position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			animation-name: move-right;
+			animation-duration: 3s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+		}
+		@keyframes move-right {
+				0% {
+				left: -100%;
+			}
+			50% {
+				left: 100%;
+			}
+			100% {
+				left: 50%;
+			}
+		}
+		.text {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 1;
+			color: white;
+			font-size: 3em;
+			font-family: sans-serif;
+		}
+<img src="hitler.jpg" alt="Imagen animada">
+	</style>
+
+	<div class="container">
+		<img class="image" src="intranedd.jpg">
+		<div class="text"><font color="red">buenas criaturitas del señor</font></div>
+	</div>
+	<button onclick="resetAnimation()">Reset</button>
+	<script>
+		var image = document.querySelector(".image");
+
+
+		function resetAnimation() {
+			image.style.animationName = "none";
+			void image.offsetWidth;
+			image.style.animationName = "move-right";
+		}
+	</script>
+
+
+	</style>
+	<style>
+		h1 {
+			animation: cambiaColor 5s infinite;
+		}
+
+		@keyframes cambiaColor {
+			0% {
+				color: red;
+			}
+
+			25% {
+				color: yellow;
+			}
+
+			50% {
+				color: blue;
+			}
+
+			75% {
+				color: green;
+			}
+
+			100% {
+				color: orange;
+			}
+		}
+	</style>
+<h1>
+<style>
+      @keyframes mover {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(35px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+
+      .texto-animado {
+        animation: mover 2s infinite;
+      }
+    </style>
+<audio src="intraneddd.mp3" controls> </audio>
+    <div class="texto-animado">
+      <p>INTRANET</p>
+    </div>
+</h1>
+
+
+	<h1 class="rainbow-text">¿Qué es la intranet?
+
+La intranet es una red de comunicación privada y segura que se utiliza dentro de una organización o empresa para compartir información y recursos entre los miembros de la organización. A diferencia de Internet, la intranet no es accesible desde fuera de la organización, y su contenido se limita a lo que se comparte entre los usuarios dentro de la red.
+
+La intranet puede ser utilizada para una variedad de propósitos, desde la distribución de noticias y actualizaciones de la empresa, hasta la gestión de recursos como bases de datos, archivos y herramientas de colaboración. También puede ser utilizada para facilitar la comunicación interna y la toma de decisiones, así como para mejorar la eficiencia y productividad de la organización.</h1>
+
+	<script>
+		setInterval(function() {
+			document.body.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
+		}, 1000);
+	</script>
+
+
+</body>
+</html>.
